@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400;1,700&family=Mukta:wght@200;300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Roboto+Condensed:wght@300&family=Roboto+Mono&family=Ubuntu:ital,wght@0,400;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  /* hiddent to scroll in x axis */
+  overflow-y: auto;
+  perspective: 10px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  transform: translateZ(-40px) scale(6);
+}
+
+.foreground {
+  transform: translateZ(-10px) scale(0.5);
+  height: 200%;
+  width: auto;
+  z-index: -1;
+  margin-top: 35rem;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  object-fit: cover;
+}
+
+h1 {
+  position: absolute;
+  top: 5rem;
+  font-size: 6rem;
+  letter-spacing: 4px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  background-color:  maroon;
+  color: white;
+  padding: 2rem 0;
+
+}
+
+.desc{
+  position: absolute;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem ,3.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: black;
+  font-size: 3rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.secHeading {
+  font-size: 3rem;
+  padding: 0 10rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  padding: 0 10rem;
+  margin: 5rem 0;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.bg1 {
+  background-image: url(iron\ man.jpg);
+}
+.bg2 {
+  background-image: url(HULK.jpg);
+}
+.bg3 {
+  background-image: url(SPIDEY.jpg);
+}
